@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4AB3763-C1B2-4D8B-A6D8-EB681C6EE5BE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Arkanoid</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)/Source;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)/Source;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\ApplicationDefinitions\ApplicationDefinitions.cpp" />
+    <ClCompile Include="Source\Application\States\CloseState\CloseState.cpp" />
+    <ClCompile Include="Source\Application\States\GameState\GameState.cpp" />
+    <ClCompile Include="Source\Application\States\GameState\Level\Level.cpp" />
+    <ClCompile Include="Source\Application\States\InitState\InitState.cpp" />
+    <ClCompile Include="Source\Helpers\MainLoop\MainLoop.cpp" />
+    <ClCompile Include="Source\Helpers\Logger\Logger.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\ColoredSprite\ColoredSprite.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\Line\Line.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLTextureManager\TGALoader\TGALoader.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLHelper\OpenGLHelper.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\OpenGLRenderer.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\TexturedColoredSprite\TexturedColoredSprite.cpp" />
+    <ClCompile Include="Source\Helpers\OpenGLTextureManager\OpenGLTextureManager.cpp" />
+    <ClCompile Include="Source\Helpers\OrthoCamera\OrthoCamera.cpp" />
+    <ClCompile Include="Source\Helpers\WindowHelper\WindowHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\ApplicationDefinitions\ApplicationDefinitions.h" />
+    <ClInclude Include="Source\Application\States\CloseState\CloseState.h" />
+    <ClInclude Include="Source\Application\States\GameState\GameState.h" />
+    <ClInclude Include="Source\Application\States\GameState\Level\Level.h" />
+    <ClInclude Include="Source\Application\States\InitState\InitState.h" />
+    <ClInclude Include="Source\Helpers\MainLoop\MainLoop.h" />
+    <ClInclude Include="Source\Helpers\Logger\Logger.h" />
+    <ClInclude Include="Source\Helpers\Math\Vector2f\Vector2f.h" />
+    <ClInclude Include="Source\Helpers\Math\Vector4f\Vector4f.h" />
+    <ClInclude Include="Source\Helpers\OpenGLHelper\OpenGLHelper.h" />
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\ColoredSprite\ColoredSprite.h" />
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\Line\Line.h" />
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\OpenGLRenderer.h" />
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\TexturedColoredSprite\TexturedColoredSprite.h" />
+    <ClInclude Include="Source\Helpers\Math\Vector3f\Vector3f.h" />
+    <ClInclude Include="Source\Helpers\OpenGLTextureManager\OpenGLTextureManager.h" />
+    <ClInclude Include="Source\Helpers\OpenGLTextureManager\TGALoader\TGALoader.h" />
+    <ClInclude Include="Source\Helpers\OrthoCamera\OrthoCamera.h" />
+    <ClInclude Include="Source\Helpers\WindowHelper\WindowHelper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

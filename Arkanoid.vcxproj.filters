@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Helpers\Logger\Logger.cpp">
+      <Filter>Helpers\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\MainLoop\MainLoop.cpp">
+      <Filter>Helpers\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ApplicationDefinitions\ApplicationDefinitions.cpp">
+      <Filter>Application\ApplicationsDefinitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\States\InitState\InitState.cpp">
+      <Filter>Application\States\InitState</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\States\CloseState\CloseState.cpp">
+      <Filter>Application\States\CloseState</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\States\GameState\GameState.cpp">
+      <Filter>Application\States\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\States\GameState\Level\Level.cpp">
+      <Filter>Application\States\GameState\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OrthoCamera\OrthoCamera.cpp">
+      <Filter>Helpers\OrthoCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLHelper\OpenGLHelper.cpp">
+      <Filter>Helpers\OpenGLHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLTextureManager\OpenGLTextureManager.cpp">
+      <Filter>Helpers\OpenGLTextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLTextureManager\TGALoader\TGALoader.cpp">
+      <Filter>Helpers\OpenGLTextureManager\TGALoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\OpenGLRenderer.cpp">
+      <Filter>Helpers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\Line\Line.cpp">
+      <Filter>Helpers\OpenGLRenderer\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\ColoredSprite\ColoredSprite.cpp">
+      <Filter>Helpers\OpenGLRenderer\ColoredSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\OpenGLRenderer\TexturedColoredSprite\TexturedColoredSprite.cpp">
+      <Filter>Helpers\OpenGLRenderer\TexturedColoredSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helpers\WindowHelper\WindowHelper.cpp">
+      <Filter>Helpers\WindowHelper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Helpers\Logger\Logger.h">
+      <Filter>Helpers\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\MainLoop\MainLoop.h">
+      <Filter>Helpers\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ApplicationDefinitions\ApplicationDefinitions.h">
+      <Filter>Application\ApplicationsDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\States\InitState\InitState.h">
+      <Filter>Application\States\InitState</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\States\CloseState\CloseState.h">
+      <Filter>Application\States\CloseState</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\States\GameState\GameState.h">
+      <Filter>Application\States\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\States\GameState\Level\Level.h">
+      <Filter>Application\States\GameState\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OrthoCamera\OrthoCamera.h">
+      <Filter>Helpers\OrthoCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLHelper\OpenGLHelper.h">
+      <Filter>Helpers\OpenGLHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\Math\Vector3f\Vector3f.h">
+      <Filter>Helpers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\Math\Vector4f\Vector4f.h">
+      <Filter>Helpers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\Math\Vector2f\Vector2f.h">
+      <Filter>Helpers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLTextureManager\OpenGLTextureManager.h">
+      <Filter>Helpers\OpenGLTextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLTextureManager\TGALoader\TGALoader.h">
+      <Filter>Helpers\OpenGLTextureManager\TGALoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\OpenGLRenderer.h">
+      <Filter>Helpers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\Line\Line.h">
+      <Filter>Helpers\OpenGLRenderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\ColoredSprite\ColoredSprite.h">
+      <Filter>Helpers\OpenGLRenderer\ColoredSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\OpenGLRenderer\TexturedColoredSprite\TexturedColoredSprite.h">
+      <Filter>Helpers\OpenGLRenderer\TexturedColoredSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helpers\WindowHelper\WindowHelper.h">
+      <Filter>Helpers\WindowHelper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{ad437be3-1d46-4eef-8175-906dfb26fc05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{6aaa9375-23c5-42e7-9ee4-66970038ed76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Logger">
+      <UniqueIdentifier>{c3ad7a89-1cbb-4cd5-86cc-ea98db95487f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\MainLoop">
+      <UniqueIdentifier>{641f7f41-2e29-42df-aa99-5ba918cb8885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ApplicationsDefinitions">
+      <UniqueIdentifier>{c598c6af-d752-47f8-bb77-f30646d0c1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\States">
+      <UniqueIdentifier>{87923b6f-25ec-4a8c-b872-c074e5ec650f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\States\InitState">
+      <UniqueIdentifier>{bbfcceec-73c3-4b10-9404-0dd79b80422a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\States\CloseState">
+      <UniqueIdentifier>{ca144ae0-00ae-4ccc-a1d9-ef5fd2223eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\States\GameState">
+      <UniqueIdentifier>{c7ba9da6-65cf-4307-802f-f72a2d36732d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\States\GameState\Level">
+      <UniqueIdentifier>{c8616d8e-f19b-4a34-9608-6cbb57f645f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OrthoCamera">
+      <UniqueIdentifier>{dbe4ff55-df6c-4f39-8855-f41226de636c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLHelper">
+      <UniqueIdentifier>{be803038-2035-4758-83de-e278d7a9a6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Math">
+      <UniqueIdentifier>{2db0cbd6-c7de-4086-8071-27de82e1171b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLTextureManager">
+      <UniqueIdentifier>{8ae3274c-6480-4092-a8f0-1a2b17680db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLTextureManager\TGALoader">
+      <UniqueIdentifier>{00f3730f-7937-44eb-a475-81380712e27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLRenderer">
+      <UniqueIdentifier>{fb6bc50f-805d-4de4-be9d-c6794dd8f8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLRenderer\Line">
+      <UniqueIdentifier>{1e3e587d-e5b9-48da-881e-1022b82b3b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLRenderer\ColoredSprite">
+      <UniqueIdentifier>{34719fdc-c27b-49fb-8145-d48bb17887ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\OpenGLRenderer\TexturedColoredSprite">
+      <UniqueIdentifier>{f98e33f6-6da9-45d1-a22e-fe6d84be7bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\WindowHelper">
+      <UniqueIdentifier>{20a082e7-5990-4fa7-bf1c-e43c864034d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
